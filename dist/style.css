@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav {
+    background-color: #38bdf8;
+    height: 100px;
+}
+
+#main {
+    background-color: #4d7c0f;
+    height: 790px;
+    position: relative;
+}
+
+#main-text {
+    background-color: #fff;
+    width: 600px;
+    height: 790px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#footer {
+    background-color: #fde68a;
+    height: 50px;
+}

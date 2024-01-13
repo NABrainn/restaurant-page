@@ -1,27 +1,82 @@
+@media (min-width: 600px) {
+    #nav {
+        font-size: 1.4em;
+    }
+    #main-text {
+        width: 40vw;
+    }
+    #home-img, #menu-img, #find-us-img {
+        width: 30px;
+        height: 30px;   
+    }
+}
+@media (max-width: 600px) {
+    #nav {
+        font-size: 1em;
+    }
+    #main-text {
+        width: 70vw;
+    }
+    #home-img, #menu-img, #find-us-img {
+        width: 20px;
+        height: 20px;   
+    }
+}
 body {
     margin: 0;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
+
 
 #nav {
     background-color: #38bdf8;
-    height: 100px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    position: sticky;
+}
+
+#nav > div {
+    display: flex;
+    cursor: pointer;
+}
+
+#nav > div:hover {
+    text-decoration: underline;
+}
+
+#home-img {
+    background-image: url('/dist/assets/home-variant.svg');
+}
+
+#menu-img {
+    background-image: url('/dist/assets/silverware.svg');
+}
+
+#find-us-img {
+    background-image: url('/dist/assets/map-marker.svg');
+}
+
+#main, #main-text {
+    height: 85vh;
 }
 
 #main {
-    background-color: #4d7c0f;
-    height: 790px;
+    background-image: url('/dist/assets/background-img.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     position: relative;
 }
 
 #main-text {
     background-color: #fff;
-    width: 600px;
-    height: 790px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -31,5 +86,11 @@ body {
 
 #footer {
     background-color: #fde68a;
-    height: 50px;
+    height: 5vh;
+    line-height: 5vh;
 }
+
+#footer-item {
+    text-align: center;   
+}
+

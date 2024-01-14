@@ -48,6 +48,9 @@
     .menu-desc {
         width: 250px;
     }
+    #contact-div {
+        font-size: 1.5em;
+    }
 }
 @media (max-width: 600px) {
     #nav {
@@ -106,6 +109,10 @@
         width: 125px;
         font-size: 0.7em;
     }
+
+    #contact-div {
+        font-size: 0.8em;
+    }
 }
 body {
     margin: 0;
@@ -119,7 +126,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 45px;
-    position: sticky;
+    
+    top: 0;
 }
 
 #nav > div {
@@ -165,6 +173,7 @@ body {
     gap: 4vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    align-items: center;
 }
 
 #footer {
@@ -229,4 +238,16 @@ body {
     background-color: #e2e8f0;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
+}
+
+/* contact page styles */
+#contact-div p {
+    margin: 0;
+}
+#contact-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-color: #e2e8f0;
+    padding: 10px;
 }

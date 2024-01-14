@@ -1,6 +1,7 @@
 import initializeWebsite from "./modules/core";
 import { renderMainHome } from './modules/home.js';
 import { renderMainMenu } from './modules/menu.js';
+import { renderMainContact } from './modules/contact.js';
 import "./style.css";
 
 initializeWebsite();
@@ -14,8 +15,8 @@ function wipeContent() {
 const nav = (function navBarItems() {
     const selectHome = document.getElementById('home');
     const selectMenu = document.getElementById('menu');
-    const selectFind = document.getElementById('find-us');
-    return { selectHome, selectMenu, selectFind }
+    const selectContact = document.getElementById('contact');
+    return { selectHome, selectMenu, selectContact }
 })()
 
 nav.selectHome.addEventListener('click', () => {
@@ -26,4 +27,9 @@ nav.selectHome.addEventListener('click', () => {
 nav.selectMenu.addEventListener('click', () => {
     wipeContent();
     renderMainMenu();
+})
+
+nav.selectContact.addEventListener('click', () => {
+    wipeContent();
+    renderMainContact();
 })

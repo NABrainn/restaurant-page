@@ -11,7 +11,7 @@ function createNav() {
     //create and append Nav elements
     createNavItem('home', 'Home', selectNav);
     createNavItem('menu', 'Menu', selectNav);
-    createNavItem('find-us', 'Find Us', selectNav);
+    createNavItem('contact', 'Contact', selectNav);
 }
 
 function createNavItem(id, text, selectNav) {
@@ -37,9 +37,8 @@ function createMain() {
     const selectMainText = document.createElement('div');
     selectMainText.id='main-text';
     selectMain.appendChild(selectMainText);
-
     //create and append default home page
-    renderMainHome(selectMainText);
+    
 }
 
 function createFooter() {
@@ -63,5 +62,6 @@ function createFooterItem(selectFooter) {
 export default function initializeWebsite() {
     createNav();
     createMain();
-    createFooter();         
+    createFooter(); 
+    renderMainHome();        
 }

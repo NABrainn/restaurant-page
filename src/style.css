@@ -5,7 +5,7 @@
     #main-text {
         width: 40vw;
     }
-    #home-img, #menu-img, #find-us-img {
+    #home-img, #menu-img, #contact-img {
         width: 30px;
         height: 30px;   
     }
@@ -18,12 +18,35 @@
         font-size: 1.5em;
     }
 
-    #description, #hours-main {
+    #home-desc, #hours-main {
         font-size: 1.4em;
         width: 20vw;
     }
     p {
         font-size: 0.8em;
+    }
+    #iced, #lungo, #crema, #red-eye {
+        width: 250px;
+        height: 250px;
+    }
+    #iced {
+        background-image: url('/src/assets/menu/iced.jpg');
+    }
+    
+    #lungo {
+        background-image: url('/src/assets/menu/lungo.jpg');
+    }
+    
+    #crema {
+        background-image: url('/src/assets/menu/crema.jpg');
+    }
+    
+    #red-eye {
+        background-image: url('/src/assets/menu/redeye.jpg');
+    }
+
+    .menu-desc {
+        width: 250px;
     }
 }
 @media (max-width: 600px) {
@@ -33,7 +56,7 @@
     #main-text {
         width: 70vw;
     }
-    #home-img, #menu-img, #find-us-img {
+    #home-img, #menu-img, #contact-img {
         width: 20px;
         height: 20px;   
     }
@@ -50,12 +73,39 @@
         line-height: 40px;
     }
 
-    #description, #hours-main {
+    #home-desc, #hours-main {
         width: 55vw;
         font-size: 13px;
     }
 
+    #iced, #lungo, #crema, #red-eye {
+        width: 125px;
+        height: 125px;
+    }
+    #iced {
+        background-image: url('/src/assets/menu/mobile-iced.jpg');
+    }
     
+    #lungo {
+        background-image: url('/src/assets/menu/mobile-lungo.jpg');
+    }
+    
+    #crema {
+        background-image: url('/src/assets/menu/mobile-crema.jpg');
+    }
+    
+    #red-eye {
+        background-image: url('/src/assets/menu/mobile-redeye.jpg');
+    }
+
+    .menu-item h3 {
+        font-size: 0.9em;
+    }
+
+    .menu-desc {
+        width: 125px;
+        font-size: 0.7em;
+    }
 }
 body {
     margin: 0;
@@ -89,7 +139,7 @@ body {
     background-image: url('/src/assets/silverware.svg');
 }
 
-#find-us-img {
+#contact-img {
     background-image: url('/src/assets/map-marker.svg');
 }
 
@@ -113,6 +163,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 #footer {
@@ -126,40 +178,55 @@ body {
 }
 
 /*home page styles*/
-#logo-main {
-    
-    margin-top: 5vh;
+#logo-main { 
     display: flex;
     justify-content:center;
     align-items: center;
-   
 }
 
-#logo-left, #logo-mid, #logo-right, #description, #hours-main {
+#logo-left, #logo-mid, #logo-right, #home-desc, #hours-main {
     padding: 10px;
 }
 
 
 #logo-left, #logo-mid, #logo-right {
-
     text-align: center;
     background-color: #854d0e;
 }
 
-#description, #hours-main {
+#home-desc, #hours-main {
     margin-left: auto;
     margin-right: auto;
 }
 
-#description {
-    
-    background-color: #e2e8f0;
-    
+#home-desc {  
+    background-color: #e2e8f0; 
 }
-
 
 #hours-main {
     background-color: #e2e8f0;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+/* menu page styles */
+.menu-item {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+}
+
+.menu-item h3 {
+    background-color: #854d0e;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+#iced, #lungo, #crema, #red-eye {
+    background-repeat: no-repeat;
+}
+
+.menu-desc {
+    background-color: #e2e8f0;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }

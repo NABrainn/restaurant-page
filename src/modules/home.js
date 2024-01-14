@@ -1,4 +1,5 @@
-export function renderMainHome(selectMainText) {
+export function renderMainHome() {
+    const selectMainText = document.getElementById('main-text');
     function logoComponent() {
         //create and append logo component
         const selectLogoMain = document.createElement('div');
@@ -33,9 +34,18 @@ export function renderMainHome(selectMainText) {
 
     function descriptionComponent() {
         const selectDesc = document.createElement('div');
-        selectDesc.id = 'description';
-        selectDesc.innerText = "We've got the best coffeee in the west and all o' America. Like whatchya hear? Then hop on over to the Menu and see what we've got on offer 😎😌"
-        selectMainText.appendChild(selectDesc)
+        selectDesc.id = 'home-desc';
+
+            const selectParaOne = document.createElement('p');
+            selectParaOne.innerText = "We've got the best coffeee in the west and all o' America.";
+
+            const selectParaTwo = document.createElement('p');
+            selectParaTwo.innerText = "Like whatchya hear?";
+
+            const selectParaThree = document.createElement('p');
+            selectParaThree.innerText = "Then hop on over to the Menu and see what we've got on offer 😎😌";
+            selectDesc.append(selectParaOne, selectParaTwo, selectParaThree)
+            selectMainText.appendChild(selectDesc)
     }
 
     function hoursComponent() {

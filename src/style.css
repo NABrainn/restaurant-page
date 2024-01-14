@@ -1,0 +1,165 @@
+@media (min-width: 600px) {
+    #nav {
+        font-size: 1.4em;
+    }
+    #main-text {
+        width: 40vw;
+    }
+    #home-img, #menu-img, #find-us-img {
+        width: 30px;
+        height: 30px;   
+    }
+    #logo-left, #logo-mid, #logo-right {
+        height: 6vh;
+        width: 9vw;     
+    }
+
+    #logo-left, #logo-right, #logo-main {
+        font-size: 1.5em;
+    }
+
+    #description, #hours-main {
+        font-size: 1.4em;
+        width: 20vw;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 600px) {
+    #nav {
+        font-size: 1em;
+    }
+    #main-text {
+        width: 70vw;
+    }
+    #home-img, #menu-img, #find-us-img {
+        width: 20px;
+        height: 20px;   
+    }
+    #logo-left, #logo-mid, #logo-right {
+        height: 6vh;
+        width: 15vw;     
+    }
+
+    #logo-left, #logo-right, #logo-main {
+        font-size: 15px;
+        line-height: 3vh;
+    }
+    #logo-left, #logo-right {
+        line-height: 40px;
+    }
+
+    #description, #hours-main {
+        width: 55vw;
+        font-size: 13px;
+    }
+
+    
+}
+body {
+    margin: 0;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+#nav {
+    background-color: #38bdf8;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    position: sticky;
+}
+
+#nav > div {
+    display: flex;
+    cursor: pointer;
+}
+
+#nav > div:hover {
+    text-decoration: underline;
+}
+
+#home-img {
+    background-image: url('/src/assets/home-variant.svg');
+}
+
+#menu-img {
+    background-image: url('/src/assets/silverware.svg');
+}
+
+#find-us-img {
+    background-image: url('/src/assets/map-marker.svg');
+}
+
+#main, #main-text {
+    min-height: 85vh;
+}
+
+#main {
+    background-image: url('/src/assets/background-img.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#main-text {
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#footer {
+    background-color: #fde68a;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+#footer-item {
+    text-align: center;   
+}
+
+/*home page styles*/
+#logo-main {
+    
+    margin-top: 5vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+#logo-left, #logo-mid, #logo-right, #description, #hours-main {
+    padding: 10px;
+}
+
+
+#logo-left, #logo-mid, #logo-right {
+
+    text-align: center;
+    background-color: #854d0e;
+}
+
+#description, #hours-main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description {
+    
+    background-color: #e2e8f0;
+    
+}
+
+
+#hours-main {
+    background-color: #e2e8f0;
+    text-align: center;
+    margin-bottom: 20px;
+}

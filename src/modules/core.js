@@ -1,3 +1,5 @@
+import { renderMainHome } from './home.js';
+
 function createNav() {
     const selectContent = document.getElementById('content');
 
@@ -17,7 +19,7 @@ function createNavItem(id, text, selectNav) {
     const selectImg = document.createElement('div');
     const selectNavItem = document.createElement('div');
     selectImg.id = `${id}-img`;
-    selectNavItem.id= id;
+    navItemComponent.id= id;
     selectNavItem.innerText = text;
     navItemComponent.append(selectImg, selectNavItem);
     selectNav.appendChild(navItemComponent);
@@ -35,6 +37,9 @@ function createMain() {
     const selectMainText = document.createElement('div');
     selectMainText.id='main-text';
     selectMain.appendChild(selectMainText);
+
+    //create and append default home page
+    renderMainHome(selectMainText);
 }
 
 function createFooter() {
@@ -50,7 +55,7 @@ function createFooter() {
 function createFooterItem(selectFooter) {
     const selectFooterItem = document.createElement('div');
     selectFooterItem.id='footer-item';
-    selectFooterItem.innerText = 'All rights reserved.';
+    selectFooterItem.innerText = 'All rights reserved.©️';
     selectFooter.appendChild(selectFooterItem);
 }
 
@@ -58,5 +63,5 @@ function createFooterItem(selectFooter) {
 export default function initializeWebsite() {
     createNav();
     createMain();
-    createFooter();      
+    createFooter();         
 }
